@@ -1,0 +1,17 @@
+:root {
+    --color-primary: #7A2231;
+    --color-prmary-dark: #5C1925;
+    --color-primary-soft: #F6E9EC;
+    --color-accent: #A67C2E; /*aceptar con observaciones*/
+    --color-bg: #FBFAF8;
+    --color-surface: #FFFFFF;
+    --color-border: #E4DFDA;
+    --color-text: #1F1A1B;
+    --color-text-muted: #6F6663; /*borrador*/
+    --color-success: #1E7F4D; /*aceptado*/
+    --color-warning: #B7791F; /*En revision*/
+    --color-danger: #B4322B; /*rechazado*/
+
+    --enviado: #3B6FA8;
+
+}
