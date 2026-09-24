@@ -1,20 +1,31 @@
-:root {
-  font-family: Arial, sans-serif;
-  color: #1F1A1B;
-  background-color: #FBFAF8;
-}
-
 * {
   box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
   margin: 0;
   min-width: 320px;
+  background: #ffffff;
+  color: #1f1a1b;
+  font-family: Arial, sans-serif;
+  font-size: 15px;
 }
 
 button,
 input,
-select {
+select,
+textarea {
   font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+#root {
+  min-height: 100vh;
 }
