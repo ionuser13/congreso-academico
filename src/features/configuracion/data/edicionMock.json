@@ -1,0 +1,65 @@
+{
+  "id": 1,
+  "nombre": "Congreso Internacional de Ingeniería y Sistemas 2026",
+  "descripcion": "Edición enfocada en avances de computación, inteligencia artificial y transformación digital.",
+  "estado": "Configuración",
+  "sede": "Campus Universitario - Lima",
+  "detalles": {
+    "fechaInicio": "2026-11-10",
+    "fechaFin": "2026-11-14",
+    "lema": "Innovación y Sostenibilidad para el Futuro",
+    "contactoEmail": "contacto.congreso@universidad.edu.pe"
+  },
+  "ejesTematicos": [
+    {
+      "id": 101,
+      "nombre": "Inteligencia Artificial y Ciencia de Datos",
+      "descripcion": "Modelos predictivos, LLMs, visión por computadora y agentes autónomos.",
+      "tieneTrabajosAsociados": false
+    },
+    {
+      "id": 102,
+      "nombre": "Ciberseguridad y Privacidad",
+      "descripcion": "Seguridad en redes, criptografía y respuesta ante incidentes.",
+      "tieneTrabajosAsociados": true
+    },
+    {
+      "id": 103,
+      "nombre": "Ingeniería de Software y Sistemas Distribuidos",
+      "descripcion": "Microservicios, arquitecturas cloud, testing y DevOps.",
+      "tieneTrabajosAsociados": false
+    }
+  ],
+  "tiposTrabajo": [
+    {
+      "id": 201,
+      "nombre": "Artículo Completo (Full Paper)",
+      "limitePaginas": 12,
+      "limitePalabras": 6000,
+      "formatosPermitidos": [".pdf"],
+      "tamanoMaximoMb": 10
+    },
+    {
+      "id": 202,
+      "nombre": "Póster de Investigación",
+      "limitePaginas": 2,
+      "limitePalabras": 1500,
+      "formatosPermitidos": [".pdf"],
+      "tamanoMaximoMb": 5
+    }
+  ],
+  "fechasImportantes": [
+    { "id": 1, "etapa": "Recepción de Trabajos", "fechaInicio": "2026-06-01", "fechaFin": "2026-07-31" },
+    { "id": 2, "etapa": "Periodo de Evaluación", "fechaInicio": "2026-08-01", "fechaFin": "2026-09-15" },
+    { "id": 3, "etapa": "Envío de Correcciones", "fechaInicio": "2026-09-16", "fechaFin": "2026-09-30" },
+    { "id": 4, "etapa": "Notificación de Resultados", "fechaInicio": "2026-10-01", "fechaFin": "2026-10-15" },
+    { "id": 5, "etapa": "Cierre de Inscripciones", "fechaInicio": "2026-10-16", "fechaFin": "2026-11-05" }
+  ],
+  "criteriosEvaluacion": [
+    { "id": 301, "nombre": "Rigor metodológico y técnico", "pesoPorcentaje": 30 },
+    { "id": 302, "nombre": "Originalidad y aporte científico", "pesoPorcentaje": 25 },
+    { "id": 303, "nombre": "Claridad y estructura de redacción", "pesoPorcentaje": 20 },
+    { "id": 304, "nombre": "Relevancia respecto a la temática", "pesoPorcentaje": 15 },
+    { "id": 305, "nombre": "Referencias y fuentes bibliográficas", "pesoPorcentaje": 10 }
+  ]
+}
