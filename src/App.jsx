@@ -1,8 +1,17 @@
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
+import ConfiguracionEdicionPage from './features/configuracion/ConfiguracionEdicionPage';
+
 function App() {
   return (
-    <div>
-      <h1>Configuración de la Edición - HU-2</h1>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        {/* HU-2 — Configuración de la edición */}
+        <Route path="/configuracion" element={<ConfiguracionEdicionPage />} />
+
+        {/* Redirección por defecto mientras el grupo integra sus rutas */}
+        <Route path="*" element={<Navigate to="/configuracion" replace />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
