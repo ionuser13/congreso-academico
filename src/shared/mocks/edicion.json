@@ -1,0 +1,145 @@
+{
+  "id": 1,
+  "nombre": "VIII Congreso Académico Estudiantil",
+  "año": 2026,
+  "sede": "Auditorio Central, Universidad de Lima — Santiago de Surco",
+  "descripcion": "Encuentro anual de investigación estudiantil. Se reciben artículos completos, resúmenes extendidos, pósteres y casos de estudio en seis ejes temáticos.",
+  "estado": "recepcion_abierta",
+  "estadoEtiqueta": "Recepción abierta",
+  "fechaCierreRecepcion": "2026-09-30T23:59",
+  "ejesTematicos": [
+    {
+      "id": 101,
+      "nombre": "Inteligencia artificial y datos",
+      "descripcion": "Aprendizaje automático y ciencia de datos aplicada.",
+      "responsable": "Dra. Ana Salazar",
+      "trabajosAsociados": 4
+    },
+    {
+      "id": 102,
+      "nombre": "Ingeniería de software",
+      "descripcion": "Arquitectura, calidad y procesos de desarrollo.",
+      "responsable": "Mg. Luis Ramírez",
+      "trabajosAsociados": 3
+    },
+    {
+      "id": 103,
+      "nombre": "Sostenibilidad y ciudad",
+      "descripcion": "Movilidad, gestión del agua y ciudades resilientes.",
+      "responsable": "Mg. Carmen Effio",
+      "trabajosAsociados": 3
+    },
+    {
+      "id": 104,
+      "nombre": "Innovación y emprendimiento",
+      "descripcion": "Modelos de negocio y transferencia tecnológica.",
+      "responsable": "Ing. Jorge Palomino",
+      "trabajosAsociados": 2
+    },
+    {
+      "id": 105,
+      "nombre": "Salud y sociedad",
+      "descripcion": "Salud pública y bienestar estudiantil.",
+      "responsable": "Dra. Milagros Yupanqui",
+      "trabajosAsociados": 1
+    },
+    {
+      "id": 106,
+      "nombre": "Economía y mercados",
+      "descripcion": "Mercados financieros, comercio y desarrollo.",
+      "responsable": "Mg. Renzo Bustamante",
+      "trabajosAsociados": 1
+    }
+  ],
+  "tiposTrabajo": [
+    {
+      "id": 201,
+      "nombre": "Artículo completo",
+      "extensionMaxima": 8000,
+      "unidadExtension": "palabras",
+      "formatoEsperado": "PDF - plantilla IEEE",
+      "admiteCoautores": true,
+      "maxCoautores": 4
+    },
+    {
+      "id": 202,
+      "nombre": "Resumen extendido",
+      "extensionMaxima": 2500,
+      "unidadExtension": "palabras",
+      "formatoEsperado": "PDF",
+      "admiteCoautores": true,
+      "maxCoautores": 3
+    },
+    {
+      "id": 203,
+      "nombre": "Póster",
+      "extensionMaxima": 1,
+      "unidadExtension": "lámina A1",
+      "formatoEsperado": "PDF - orientación vertical",
+      "admiteCoautores": true,
+      "maxCoautores": 5
+    },
+    {
+      "id": 204,
+      "nombre": "Caso de estudio",
+      "extensionMaxima": 5000,
+      "unidadExtension": "palabras",
+      "formatoEsperado": "PDF",
+      "admiteCoautores": false,
+      "maxCoautores": 0
+    }
+  ],
+  "fechasLimite": [
+    {
+      "id": "recepcion",
+      "etapa": "Cierre de recepción de trabajos",
+      "fecha": "2026-09-30",
+      "hora": "23:59",
+      "color": "danger"
+    },
+    {
+      "id": "revision",
+      "etapa": "Cierre de la etapa de revisión",
+      "fecha": "2026-10-20",
+      "hora": "18:00",
+      "color": "warning"
+    },
+    {
+      "id": "publicacion",
+      "etapa": "Publicación de resultados",
+      "fecha": "2026-10-28",
+      "hora": "12:00",
+      "color": "success"
+    }
+  ],
+  "criteriosEvaluacion": [
+    {
+      "id": 301,
+      "nombre": "Originalidad",
+      "descripcion": "Aporte novedoso frente a la literatura consultada.",
+      "pesoPorcentaje": 25
+    },
+    {
+      "id": 302,
+      "nombre": "Rigor metodológico",
+      "descripcion": "Coherencia del diseño, los datos y el análisis.",
+      "pesoPorcentaje": 30
+    },
+    {
+      "id": 303,
+      "nombre": "Claridad de la exposición",
+      "descripcion": "Redacción, estructura y calidad de las figuras.",
+      "pesoPorcentaje": 20
+    },
+    {
+      "id": 304,
+      "nombre": "Relevancia y aporte",
+      "descripcion": "Pertinencia para el eje temático y utilidad práctica.",
+      "pesoPorcentaje": 25
+    }
+  ],
+  "actividad": {
+    "trabajosRecibidos": 14,
+    "revisoresRegistrados": 9
+  }
+}
