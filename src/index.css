@@ -11,7 +11,6 @@
   --color-success: #1E7F4D; /*aceptado*/
   --color-warning: #B7791F; /*En revision*/
   --color-danger: #B4322B; /*rechazado*/
-
   --enviado: #3B6FA8;
 
   font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
@@ -30,4 +29,18 @@ body {
   min-height: 100vh;
   background-color: var(--color-bg);
   color: var(--color-text);
+}
+
+/* Estilos que trajo tu compañero para el contenedor principal */
+#root {
+  max-width: 100%;
+  margin: 0 auto;
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Reseteo básico de márgenes para párrafos */
+p {
+  margin: 0;
 }

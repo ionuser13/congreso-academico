@@ -1,16 +1,17 @@
+import './Header.css'
 function Header() {
     return (
-        <header>
+        <header className="header">
             <div id="navIzq">
-                <div id="logo">C</div>
-                <div class="navInfo">
-                    <p>Congreso Académico Estudiantil</p>
-                    <p>Universidad de Lima - Edición 2026</p>
+                <span id="logo">C</span>
+                <div className="navInfo">
+                    <p id="congreso">Congreso Académico Estudiantil</p>
+                    <p id="universidad">Universidad de Lima - Edición 2026</p>
                 </div>
             </div>
             <div id="navDer">
-                <p>Estado de la edición</p>
-                <p>Recepción abierta</p> {/*Cambiar a un estado dinamico */}
+                <p id="estadoEdicion">Estado de la edición</p>
+                <p id="recepcion">Recepción abierta</p> {/*Cambiar a un estado dinamico */}
             </div>
         </header>
     )

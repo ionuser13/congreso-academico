@@ -37,5 +37,6 @@
     --font-size-etiqueta: 12px;
     --line-height-etiqueta: 16px;
 
-    
+    --font-weight-thin: 200;
+    --letter-spacing-etiqueta: 0.1em;
 }
