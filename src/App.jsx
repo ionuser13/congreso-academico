@@ -3,6 +3,7 @@ import heroImg from './assets/hero.png'
 import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
 import Header from './components/Header/Header.jsx'
+import Footer from './components/Footer/Footer.jsx'
 import './App.css'
 
 function App() {
@@ -10,8 +11,8 @@ function App() {
 
   return (
     <>
-    <Header />
-      
+      <Header />
+      <Footer />
     </>
   )
 }
