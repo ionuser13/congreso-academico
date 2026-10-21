@@ -1,3 +1,5 @@
+@import './styles/variables.css';
+
 .counter {
   font-size: 16px;
   padding: 5px 10px;
@@ -181,4 +183,33 @@
     right: 0;
     border-right-color: var(--border);
   }
+}
+
+/* ---- Navegación provisional (HU-4, se elimina al integrar la HU-1) ---- */
+.nav-provisional {
+  background: var(--color-surface);
+  border-bottom: 1px solid var(--color-border);
+}
+.nav-provisional__interior {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+  display: flex;
+  gap: 24px;
+  height: 44px;
+  align-items: center;
+}
+.nav-provisional__enlace {
+  font-family: var(--font-sans);
+  font-size: 13px;
+  color: var(--color-text);
+  text-decoration: none;
+  padding: 12px 0;
+  border-bottom: 2px solid transparent;
+}
+.nav-provisional__enlace:hover { color: var(--color-primary); }
+.nav-provisional__enlace.activo {
+  color: var(--color-primary);
+  border-bottom-color: var(--color-primary);
+  font-weight: 500;
 }
