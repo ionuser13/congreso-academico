@@ -40,3 +40,37 @@
     --font-weight-thin: 200;
     --letter-spacing-etiqueta: 0.1em;
 }
+
+.titulo {
+    font-size: var(--font-size-screen-title);
+    line-height: var(--line-height-screen-title);
+    font-family: var(--font-serif);
+}
+.tituloSeccion {
+    font-size: var(--font-size-section-title);
+    line-height: var(--line-height-section-title);
+    font-family: var(--font-serif);
+}
+.subtituloInterfaz {
+    font-size: var(--font-size-section-subtitle);
+    line-height: var(--line-height-section-subtitle);
+    font-family: var(--font-sans);
+}
+.cuerpo {
+    font-size: var(--font-size-body);
+    line-height: var(--line-height-body);
+    font-family: var(--font-sans);
+}
+.auxiliar {
+    font-size: var(--font-size-auxiliary);
+    line-height: var(--line-height-auxiliary);
+    font-family: var(--font-sans);
+}
+.etiqueta{
+    font-size: var(--font-size-etiqueta);
+    line-height: var(--line-height-etiqueta);
+    font-family: var(--font-sans);
+    font-weight: var(--font-weight-thin);
+    letter-spacing: var(--letter-spacing-etiqueta);
+    text-transform: uppercase;
+}

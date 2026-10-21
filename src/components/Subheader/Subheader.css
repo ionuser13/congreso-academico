@@ -1,0 +1,42 @@
+@import '../../styles/variables.css';
+.subheaderContainer {
+    background-color: var(--color-surface);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.subheader {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+    width: 1200px;
+}
+.options, .subhDer {
+    display: flex;
+    gap: 16px;
+}
+.recuadro {
+    border: 1px solid var(--color-border);
+    border-radius: 2px;
+    width: 42px;
+}
+.cuenta {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+.nombre, .option {
+    color: var(--color-text);
+}
+.option {
+    display: flex;
+    align-items: center;
+}
+.profile {
+    background-color: var(--color-primary-soft);
+    color: var(--color-primary);
+    font-weight: 600;
+    padding: 8px;
+    text-align: center;
+    border-radius: 2px;
+}
