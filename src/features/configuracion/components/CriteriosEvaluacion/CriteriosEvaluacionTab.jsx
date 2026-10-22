@@ -1,10 +1,20 @@
-import '../TablasCompartidas.css';
+import { useState } from 'react';
+import ModalCriterio from './ModalCriterio';
+import '../TablasCompartidas.css'; // Ojo: ajusta la ruta si es necesario
 
-export default function CriteriosEvaluacionTab({ datos }) {
+export default function CriteriosEvaluacionTab({ datos, onActualizar }) {
+  const [modalAbierto, setModalAbierto] = useState(false);
+
   const total = datos.criteriosEvaluacion.reduce(
     (sum, c) => sum + Number(c.pesoPorcentaje), 0
   );
   const sumaOk = total === 100;
+
+  const handleGuardarCriterio = (nuevoCriterio) => {
+    const nuevosCriterios = [...datos.criteriosEvaluacion, nuevoCriterio];
+    onActualizar({ ...datos, criteriosEvaluacion: nuevosCriterios });
+    setModalAbierto(false);
+  };
 
   return (
     <div className="tab-wrapper">
@@ -13,6 +23,9 @@ export default function CriteriosEvaluacionTab({ datos }) {
           <h2 className="tab-titulo">Criterios de evaluación</h2>
           <p className="tab-subtitulo">Los pesos deben sumar 100.</p>
         </div>
+        <button className="btn-primario" onClick={() => setModalAbierto(true)}>
+          + Agregar Criterio
+        </button>
       </header>
 
       {sumaOk ? (
@@ -43,6 +56,14 @@ export default function CriteriosEvaluacionTab({ datos }) {
           ))}
         </tbody>
       </table>
+
+      {modalAbierto && (
+        <ModalCriterio 
+          onCerrar={() => setModalAbierto(false)} 
+          onGuardar={handleGuardarCriterio}
+          pesoActual={total}
+        />
+      )}
     </div>
   );
 }
