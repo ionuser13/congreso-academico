@@ -62,7 +62,7 @@ export function obtenerEjesTematicos() {
 // Campos esperados por el contrato: { revisorId, estado: 'pendiente' | 'entregada' }
 export function obtenerActividadRevisor(usuarioId) {
   if (!Array.isArray(revisiones)) return null;
-  const propias = revisiones.filter((r) => r.revisorId === usuarioId);
+  const propias = revisiones.filter((r) => r.revisorId === usuarioId && r.estado !== 'retirada');
   const entregadas = propias.filter((r) => r.estado === 'entregada').length;
   return {
     asignadas: propias.length,
