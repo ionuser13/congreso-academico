@@ -1,20 +1,24 @@
-import { useState } from 'react'
-import heroImg from './assets/hero.png'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import Header from './components/Header/Header.jsx'
-import Footer from './components/Footer/Footer.jsx'
-import './App.css'
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
+// Debe quedar así (ruta nueva):
+import ConfiguracionEdicionPage from './features/configuracion/pages/ConfiguracionEdicionPage';
+import Header from './components/Header/Header.jsx';
+import './App.css';
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
+    <BrowserRouter>
+      {/* El Header global que hizo tu compañero */}
       <Header />
-      <Footer />
-    </>
-  )
+      
+      <Routes>
+        {/* HU-2 — Configuración de la edición */}
+        <Route path="/configuracion" element={<ConfiguracionEdicionPage />} />
+
+        {/* Redirección por defecto mientras el grupo integra sus rutas */}
+        <Route path="*" element={<Navigate to="/configuracion" replace />} />
+      </Routes>
+    </BrowserRouter>
+  );
 }
 
-export default App
+export default App;
