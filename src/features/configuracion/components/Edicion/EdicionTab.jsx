@@ -49,8 +49,8 @@ export default function EdicionTab({ datos, onActualizar }) {
             <input
               type="number"
               className="input-texto"
-              value={datos.anio || ''}
-              onChange={(e) => handleChangeRaiz('anio', Number(e.target.value))}
+              value={datos.año || ''}
+              onChange={(e) => handleChangeRaiz('año', Number(e.target.value))}
               min="2024"
               max="2100"
             />
