@@ -40,7 +40,6 @@
     --font-weight-thin: 200;
     --letter-spacing-etiqueta: 0.1em;
 }
-
 .titulo {
     font-size: var(--font-size-screen-title);
     line-height: var(--line-height-screen-title);

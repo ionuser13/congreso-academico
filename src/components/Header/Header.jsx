@@ -1,5 +1,5 @@
-import './Header.css'
-import '../../styles/variables.css'
+import './Header.css';
+import '../../styles/variables.css';
 function Header() {
     return (
         <div className="headerContainer">
@@ -12,7 +12,7 @@ function Header() {
                     </div>
                 </div>
                 <div id="navDer">
-                    <p id="estadoEdicion" className="etiqueta">Estado de la edición</p>
+                    <p id="estadoEdicion" className='etiqueta'>Estado de la edición</p>
                     <p id="recepcion">Recepción abierta</p> {/*Cambiar a un estado dinamico */}
                 </div>
             </header>
