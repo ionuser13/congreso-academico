@@ -1,0 +1,23 @@
+[
+  {
+    "codigo": "COM-2026-A7K2",
+    "correo": "carmen.effio@ulima.edu.pe",
+    "invitadoPor": 4,
+    "fechaVencimiento": "2026-12-31",
+    "usada": false
+  },
+  {
+    "codigo": "COM-2026-B3M9",
+    "correo": "jorge.palomino@ulima.edu.pe",
+    "invitadoPor": 4,
+    "fechaVencimiento": "2026-12-31",
+    "usada": false
+  },
+  {
+    "codigo": "COM-2026-X1V0",
+    "correo": "renzo.bustamante@ulima.edu.pe",
+    "invitadoPor": 4,
+    "fechaVencimiento": "2026-08-31",
+    "usada": false
+  }
+]
