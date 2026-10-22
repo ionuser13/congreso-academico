@@ -1,8 +1,0 @@
-@import '../../styles/variables.css';
-
-.footerContainer {
-    background-color: var(--color-text);
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}

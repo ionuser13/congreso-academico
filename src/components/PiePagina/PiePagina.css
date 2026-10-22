@@ -1,26 +1,28 @@
 @import '../../styles/variables.css';
 
 /* Pie de página común: fondo oscuro, títulos de columna en dorado. */
+.footerContainer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background: #231C1D;
+}
 .pie {
   margin-top: auto;
   font-family: var(--font-sans);
   text-align: left;
   color: #D9D3CF;
-  background: #231C1D;
+  width: 1200px;
 }
 .pie__contenido {
   display: grid;
   grid-template-columns: 2fr 1fr 1fr 1fr;
   gap: 24px;
-  max-width: 1200px;
   margin: 0 auto;
   padding: 40px 16px 32px;
 }
 .pie__marca h2 {
   margin: 0 0 8px;
-  font-family: var(--font-serif);
-  font-size: var(--font-size-section-subtitle);
-  line-height: var(--line-height-section-subtitle);
   font-weight: 600;
   letter-spacing: normal;
   color: var(--color-surface);
@@ -34,12 +36,7 @@
 .pie__columna { display: flex; flex-direction: column; align-items: flex-start; gap: 6px; }
 .pie__columna h3 {
   margin: 0 0 4px;
-  font-family: var(--font-sans);
-  font-size: var(--font-size-etiqueta);
-  line-height: var(--line-height-etiqueta);
   font-weight: 500;
-  text-transform: uppercase;
-  letter-spacing: var(--letter-spacing-etiqueta);
   color: var(--color-accent);
 }
 .pie__columna a,
