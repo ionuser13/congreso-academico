@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "nombres": "Rosa María",
+    "apellidos": "Quispe Ttito",
+    "correo": "rosa.quispe@aloe.ulima.edu.pe",
+    "contrasena": "Congreso2026",
+    "institucion": "Universidad de Lima",
+    "carrera": "Ingeniería de Sistemas",
+    "codigoAlumno": "20211547",
+    "rol": "autor",
+    "lineasInteres": [],
+    "estado": "activo",
+    "fechaRegistro": "2026-08-18"
+  },
+  {
+    "id": 2,
+    "nombres": "Luis Fernando",
+    "apellidos": "Ramírez Cárdenas",
+    "correo": "luis.ramirez@ulima.edu.pe",
+    "contrasena": "Revisor2026",
+    "institucion": "Universidad de Lima",
+    "carrera": "Ingeniería de Sistemas",
+    "codigoAlumno": "",
+    "rol": "revisor",
+    "lineasInteres": [101, 102, 104],
+    "estado": "activo",
+    "fechaRegistro": "2026-08-20"
+  },
+  {
+    "id": 3,
+    "nombres": "Diego Alonso",
+    "apellidos": "Chávez Manrique",
+    "correo": "diego.chavez@aloe.ulima.edu.pe",
+    "contrasena": "Ambos2026",
+    "institucion": "Universidad de Lima",
+    "carrera": "Ingeniería Industrial",
+    "codigoAlumno": "20201233",
+    "rol": "ambos",
+    "lineasInteres": [103],
+    "estado": "activo",
+    "fechaRegistro": "2026-08-25"
+  },
+  {
+    "id": 4,
+    "nombres": "Ana",
+    "apellidos": "Salazar Bermúdez",
+    "correo": "ana.salazar@ulima.edu.pe",
+    "contrasena": "Comite2026",
+    "institucion": "Universidad de Lima",
+    "carrera": "",
+    "codigoAlumno": "",
+    "rol": "comite",
+    "lineasInteres": [],
+    "estado": "activo",
+    "fechaRegistro": "2026-08-01"
+  },
+  {
+    "id": 5,
+    "nombres": "Carla",
+    "apellidos": "Huamán Rojas",
+    "correo": "carla.huaman@aloe.ulima.edu.pe",
+    "contrasena": "Bloqueada2026",
+    "institucion": "Universidad de Lima",
+    "carrera": "Ingeniería Civil",
+    "codigoAlumno": "20221088",
+    "rol": "autor",
+    "lineasInteres": [],
+    "estado": "bloqueado",
+    "fechaRegistro": "2026-09-02"
+  }
+]
