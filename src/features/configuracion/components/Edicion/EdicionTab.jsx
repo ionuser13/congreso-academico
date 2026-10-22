@@ -2,6 +2,7 @@
 import { Tag, MapPin, FileText } from 'lucide-react';
 import './EdicionTab.css'; // Importamos los estilos
 
+
 export default function EdicionTab({ datos, onActualizar }) {
   const handleChangeRaiz = (campo, valor) => {
     onActualizar({ ...datos, [campo]: valor });

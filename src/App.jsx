@@ -1,5 +1,6 @@
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
-import ConfiguracionEdicionPage from './features/configuracion/ConfiguracionEdicionPage';
+// Debe quedar así (ruta nueva):
+import ConfiguracionEdicionPage from './features/configuracion/pages/ConfiguracionEdicionPage';
 import Header from './components/Header/Header.jsx';
 import './App.css';
 
