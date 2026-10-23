@@ -2,12 +2,31 @@ import { useState } from 'react';
 import { validarCoautor } from '../utils/validacionesTrabajo';
 
 const limpio = (c) => ({
-  nombreCompleto: c.nombreCompleto.trim(), correo: c.correo.trim(), institucion: c.institucion.trim(),
+  nombreCompleto: (c.nombreCompleto || c.nombre || '').trim(), 
+  correo: (c.correo || '').trim(), 
+  institucion: (c.institucion || '').trim(),
 });
 
-export function useCoautores(trabajo, tipo) {
-  const principal = trabajo.autorPrincipal;
-  const [coautores, setCoautores] = useState(trabajo.coautores);
+export function useCoautores(trabajo, tipo, usuario) {
+  // Obtenemos el autor principal de forma segura (soporta objeto o fallback a usuario/datos por defecto)
+  const principal = trabajo.autorPrincipal || {
+    usuarioId: trabajo.autorPrincipalId || usuario?.id || null,
+    nombreCompleto: usuario?.nombreCompleto || usuario?.nombre || 'Autor Principal',
+    correo: usuario?.correo || 'autor@ulima.edu.pe',
+    institucion: usuario?.institucion || 'Universidad de Lima',
+  };
+
+  // Normalizamos los coautores existentes para que siempre manejen 'nombreCompleto' de forma segura
+  const coautoresIniciales = Array.isArray(trabajo.coautores)
+    ? trabajo.coautores.map(c => ({
+        usuarioId: c.usuarioId ?? null,
+        nombreCompleto: c.nombreCompleto || c.nombre || '',
+        correo: c.correo || '',
+        institucion: c.institucion || '',
+      }))
+    : [];
+
+  const [coautores, setCoautores] = useState(coautoresIniciales);
   const [correspondencia, setCorrespondencia] = useState(trabajo.correspondencia || principal.correo);
   const [editando, setEditando] = useState(null); // índice en coautores, o null
 
