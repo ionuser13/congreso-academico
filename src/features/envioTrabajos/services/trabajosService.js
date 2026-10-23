@@ -47,7 +47,11 @@ function exigirAbierta() {
 /* ---------- lecturas (síncronas) ---------- */
 export const listarTrabajos = () => leer();
 export const obtenerTrabajo = (id) => leer().find((t) => Number(t.id) === Number(id)) ?? null;
-export const listarTrabajosDe = (usuario) => leer().filter((t) => puedeVer(t, usuario));
+export const listarTrabajosDe = (usuario) => {
+  if (!usuario) return [];
+  const todos = leer();
+  return todos.filter((t) => puedeVer(t, usuario));
+};
 
 /* ---------- escrituras (Promesas) ---------- */
 export async function crearTrabajo(datos, usuario) {

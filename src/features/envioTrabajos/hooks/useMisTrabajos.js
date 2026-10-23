@@ -1,6 +1,6 @@
 import { useMemo, useState } from 'react';
 import { listarTrabajosDe } from '../services/trabajosService';
-import { obtenerDictamen, obtenerSeguimiento } from '../services/seguimientoService'; // Asegúrate de apuntar al archivo correcto de seguimiento
+import { obtenerDictamen, obtenerSeguimiento } from '../services/lecturaRevision';
 import { ORDEN_FILTROS, estadoVisible } from '../utils/estadosTrabajo';
 import { normalizar } from '../utils/formatos';
 import { useRecepcion } from './useRecepcion';
@@ -19,10 +19,14 @@ export function useMisTrabajos(usuario) {
         .map((t) => {
           const dictamen = obtenerDictamen(t.id, etapa);
           const seguimiento = obtenerSeguimiento(t.id, etapa);
-          return { ...t, visible: estadoVisible(t, etapa, dictamen, seguimiento), dictamen };
+          return { 
+            ...t, 
+            visible: estadoVisible(t, etapa, dictamen, seguimiento), 
+            dictamen 
+          };
         })
         .sort((a, b) => a.id - b.id), // Ordenamiento numérico correcto para IDs numéricos
-    [usuario?.id, usuario?.correo, etapa], // Dependencias ampliadas para mayor seguridad
+    [usuario?.id, usuario?.correo, etapa],
   );
 
   const conteos = useMemo(() => {
@@ -38,7 +42,7 @@ export function useMisTrabajos(usuario) {
     return todos.filter(
       (t) =>
         (filtro === 'todos' || t.visible === filtro) &&
-        (!q || normalizar(t.titulo).includes(q) || normalizar(t.codigo).includes(q)), // Búsqueda por título o código único del trabajo
+        (!q || normalizar(t.titulo).includes(q) || normalizar(t.codigo || '').includes(q)),
     );
   }, [todos, filtro, busqueda]);
 

@@ -5,7 +5,7 @@ import Aviso from '../components/common/Aviso';
 import BannerEtapa from '../components/common/BannerEtapa';
 import PasosTrabajo, { TOTAL_PASOS } from '../components/common/PasosTrabajo';
 import TarjetaLateral from '../components/common/TarjetaLateral';
-import FormularioDatosGenerales from '../components/formulario/FormularioDatosGenerales';
+import FormularioDatosGenerales from '../components/forms/FormularioDatosGenerales';
 import { useUsuario } from '../hooks/useUsuario';
 import { useRecepcion } from '../hooks/useRecepcion'; 
 import { useTrabajo } from '../hooks/useTrabajo';

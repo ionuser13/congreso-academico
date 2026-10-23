@@ -4,18 +4,46 @@ import { miles } from './formatos';
 
 const norm = (c) => (c || '').trim().toLowerCase();
 
-export const esAutorPrincipal = (t, u) => !!u && norm(t.autorPrincipal.correo) === norm(u.correo);
-export const esCoautor = (t, u) => !!u && t.coautores.some((c) => norm(c.correo) === norm(u.correo));
-export const puedeVer = (t, u) => esAutorPrincipal(t, u) || esCoautor(t, u);
+export const esAutorPrincipal = (t, u) => {
+  if (!u || !t) return false;
+  // Compara el autorPrincipalId del trabajo con el id del usuario logueado
+  if (t.autorPrincipalId != null && u.id != null) {
+    return Number(t.autorPrincipalId) === Number(u.id);
+  }
+  return false;
+};
+
+export const esCoautor = (t, u) => {
+  if (!u || !t) return false;
+  const coautores = Array.isArray(t.coautores) ? t.coautores : [];
+  
+  return coautores.some((c) => {
+    // 1. Si el coautor tiene usuarioId registrado, se compara con el id del usuario
+    if (c?.usuarioId != null && u?.id != null) {
+      return Number(c.usuarioId) === Number(u.id);
+    }
+    // 2. Fallback por correo si estuviera presente
+    if (c?.correo && u?.correo) {
+      return norm(c.correo) === norm(u.correo);
+    }
+    return false;
+  });
+};
+
+export const puedeVer = (t, u) => {
+  if (!t || !u) return false;
+  return esAutorPrincipal(t, u) || esCoautor(t, u);
+};
 /** Editar: solo el autor principal y solo con la recepción abierta */
 export const puedeEditar = (t, u, etapa) => etapa === ETAPAS.ABIERTA && esAutorPrincipal(t, u);
 
 export function listaVerificacion(t) {
+  if (!t) return [];
   return [
-    { clave: 'datos', ok: !!(t.titulo.trim() && t.tipoId && t.ejeId), texto: 'Datos generales completos' },
+    { clave: 'datos', ok: !!((t.titulo || '').trim() && t.tipoId && t.ejeId), texto: 'Datos generales completos' },
     {
       clave: 'resumen',
-      ok: !!t.resumen.trim() && t.resumen.length <= MAX_RESUMEN && t.palabrasClave.length >= MIN_PALABRAS,
+      ok: !!(t.resumen || '').trim() && t.resumen.length <= MAX_RESUMEN && (t.palabrasClave || []).length >= MIN_PALABRAS,
       texto: 'Resumen y palabras clave',
     },
     { clave: 'enlace', ok: esUrlValida(t.enlaceDocumento), texto: 'Enlace al documento' },
@@ -44,5 +72,8 @@ export function textoRequisitos(tipo) {
 }
 
 export function nombresAutores(t) {
-  return [t.autorPrincipal.nombreCompleto, ...t.coautores.map((c) => c.nombreCompleto)];
+  if (!t) return [];
+  const nombrePrincipal = t?.autorPrincipal?.nombreCompleto ?? t?.autorPrincipal?.nombre ?? 'Autor Principal';
+  const coautores = Array.isArray(t?.coautores) ? t.coautores : [];
+  return [nombrePrincipal, ...coautores.map((c) => c?.nombreCompleto ?? c?.nombre ?? '')].filter(Boolean);
 }

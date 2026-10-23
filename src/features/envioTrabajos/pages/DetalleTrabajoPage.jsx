@@ -1,11 +1,11 @@
 import { useState } from 'react';
 import { Link, useLocation, useNavigate, useParams } from 'react-router-dom';
-import Aviso from '../components/comunes/Aviso';
-import Boton from '../components/comunes/Boton';
-import BannerEtapa from '../components/comunes/BannerEtapa';
-import InsigniaEstado from '../components/comunes/InsigniaEstado';
-import Migas from '../components/comunes/Migas';
-import TarjetaLateral from '../components/comunes/TarjetaLateral';
+import Aviso from '../components/common/Aviso';
+import Boton from '../components/common/Boton';
+import BannerEtapa from '../components/common/BannerEtapa';
+import InsigniaEstado from '../components/common/InsigniaEstado';
+import Migas from '../components/common/Migas';
+import TarjetaLateral from '../components/common/TarjetaLateral';
 import DatosTrabajo from '../components/detalle/DatosTrabajo';
 import ListaCoautores from '../components/detalle/ListaCoautores';
 import ListaVerificacion from '../components/detalle/ListaVerificacion';

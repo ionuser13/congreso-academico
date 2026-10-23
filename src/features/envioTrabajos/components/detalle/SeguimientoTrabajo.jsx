@@ -1,4 +1,4 @@
-import TarjetaLateral from '../comunes/TarjetaLateral';
+import TarjetaLateral from '../common/TarjetaLateral';
 import { fechaCorta, fechaHoraPunto } from '../../utils/formatos';
 
 export default function SeguimientoTrabajo({ trabajo, seguimiento, publicacion }) {
