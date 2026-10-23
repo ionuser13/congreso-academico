@@ -3,6 +3,7 @@ import Header from './components/Header/Header.jsx'
 import Navegacion from './components/Navegacion/Navegacion.jsx'
 import PiePagina from './components/PiePagina/PiePagina.jsx'
 import { AuthProvider, RutaProtegida, rutasAuth, rutaNoEncontrada } from './features/auth'
+import {rutasEnvioTrabajo} from './features/envioTrabajos'
 import ConfiguracionEdicionPage from './features/configuracion/pages/ConfiguracionEdicionPage'
 import './App.css'
 
@@ -22,7 +23,7 @@ function App() {
           </Route>
 
           {/* Rutas de las demás historias (HU-3 a HU-6) */}
-
+          {rutasEnvioTrabajo}
           {/* 404: siempre al final */}
           {rutaNoEncontrada}
         </Routes>

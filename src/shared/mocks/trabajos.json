@@ -1,0 +1,288 @@
+[
+  {
+    "id": 1,
+    "codigo": "TRB-2026-031",
+    "titulo": "Refactorización guiada por métricas de deuda técnica",
+    "resumen": "Propuesta de priorización de refactorizaciones a partir de métricas estáticas de deuda técnica en proyectos de curso.",
+    "ejeId": 102,
+    "tipoId": 201,
+    "palabrasClave": [
+      "deuda técnica",
+      "refactorización",
+      "métricas"
+    ],
+    "enlaceDocumento": "https://drive.google.com/file/d/ejemplo-031",
+    "estado": "en_revision",
+    "fechaEnvio": "2026-09-24T10:12",
+    "autorPrincipalId": 3,
+    "coautores": [
+      {
+        "usuarioId": null,
+        "nombre": "Andrea Cárdenas Pinto",
+        "correo": "andrea.cardenas@aloe.ulima.edu.pe",
+        "institucion": "Universidad de Lima"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "codigo": "TRB-2026-035",
+    "titulo": "Pruebas automatizadas en proyectos universitarios de software",
+    "resumen": "Estudio del efecto de las pruebas automatizadas sobre la tasa de defectos en proyectos de pregrado.",
+    "ejeId": 102,
+    "tipoId": 202,
+    "palabrasClave": [
+      "testing",
+      "automatización",
+      "calidad"
+    ],
+    "enlaceDocumento": "https://drive.google.com/file/d/ejemplo-035",
+    "estado": "en_revision",
+    "fechaEnvio": "2026-09-25T18:40",
+    "autorPrincipalId": 1,
+    "coautores": []
+  },
+  {
+    "id": 3,
+    "codigo": "TRB-2026-040",
+    "titulo": "Arquitectura de microservicios para un sistema de matrícula",
+    "resumen": "Diseño y evaluación de una arquitectura de microservicios aplicada al proceso de matrícula universitaria.",
+    "ejeId": 102,
+    "tipoId": 204,
+    "palabrasClave": [
+      "microservicios",
+      "arquitectura",
+      "matrícula"
+    ],
+    "enlaceDocumento": "https://drive.google.com/file/d/ejemplo-040",
+    "estado": "en_revision",
+    "fechaEnvio": "2026-09-26T09:05",
+    "autorPrincipalId": 5,
+    "coautores": [
+      {
+        "usuarioId": 3,
+        "nombre": "Diego Alonso Chávez Manrique",
+        "correo": "diego.chavez@aloe.ulima.edu.pe",
+        "institucion": "Universidad de Lima"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "codigo": "TRB-2026-042",
+    "titulo": "Predicción de deserción universitaria mediante aprendizaje supervisado",
+    "resumen": "Modelos de clasificación para anticipar el riesgo de deserción en los primeros ciclos.",
+    "ejeId": 101,
+    "tipoId": 201,
+    "palabrasClave": [
+      "deserción",
+      "aprendizaje supervisado",
+      "educación"
+    ],
+    "enlaceDocumento": "https://drive.google.com/file/d/ejemplo-042",
+    "estado": "en_revision",
+    "fechaEnvio": "2026-09-22T21:15",
+    "autorPrincipalId": 1,
+    "coautores": [
+      {
+        "usuarioId": 3,
+        "nombre": "Diego Alonso Chávez Manrique",
+        "correo": "diego.chavez@aloe.ulima.edu.pe",
+        "institucion": "Universidad de Lima"
+      },
+      {
+        "usuarioId": 8,
+        "nombre": "Milagros Yupanqui Ríos",
+        "correo": "milagros.yupanqui@ulima.edu.pe",
+        "institucion": "Universidad de Lima"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "codigo": "TRB-2026-045",
+    "titulo": "Detección de fraude en pagos móviles con modelos de árboles",
+    "resumen": "Comparación de árboles de decisión y bosques aleatorios para detectar transacciones fraudulentas.",
+    "ejeId": 106,
+    "tipoId": 201,
+    "palabrasClave": [
+      "fraude",
+      "pagos móviles",
+      "árboles de decisión"
+    ],
+    "enlaceDocumento": "https://drive.google.com/file/d/ejemplo-045",
+    "estado": "en_revision",
+    "fechaEnvio": "2026-09-23T16:30",
+    "autorPrincipalId": 5,
+    "coautores": []
+  },
+  {
+    "id": 6,
+    "codigo": "TRB-2026-046",
+    "titulo": "Incubadora universitaria y transferencia tecnológica en Lima",
+    "resumen": "Análisis del rol de las incubadoras universitarias en la transferencia tecnológica local.",
+    "ejeId": 104,
+    "tipoId": 202,
+    "palabrasClave": [
+      "incubadora",
+      "transferencia tecnológica",
+      "emprendimiento"
+    ],
+    "enlaceDocumento": "https://drive.google.com/file/d/ejemplo-046",
+    "estado": "enviado",
+    "fechaEnvio": "2026-09-29T11:20",
+    "autorPrincipalId": 1,
+    "coautores": []
+  },
+  {
+    "id": 7,
+    "codigo": "TRB-2026-047",
+    "titulo": "Segmentación de estudiantes por hábitos de estudio",
+    "resumen": "Agrupamiento no supervisado de estudiantes según patrones de estudio declarados.",
+    "ejeId": 101,
+    "tipoId": 202,
+    "palabrasClave": [
+      "clustering",
+      "hábitos de estudio",
+      "analítica"
+    ],
+    "enlaceDocumento": "https://drive.google.com/file/d/ejemplo-047",
+    "estado": "enviado",
+    "fechaEnvio": "2026-09-29T20:02",
+    "autorPrincipalId": 5,
+    "coautores": []
+  },
+  {
+    "id": 8,
+    "codigo": "TRB-2026-049",
+    "titulo": "Reconocimiento de patrones en consumo eléctrico del campus",
+    "resumen": "Detección de patrones anómalos de consumo eléctrico a partir de series de tiempo del campus.",
+    "ejeId": 101,
+    "tipoId": 201,
+    "palabrasClave": [
+      "series de tiempo",
+      "consumo eléctrico",
+      "anomalías"
+    ],
+    "enlaceDocumento": "https://drive.google.com/file/d/ejemplo-049",
+    "estado": "en_revision",
+    "fechaEnvio": "2026-09-27T08:55",
+    "autorPrincipalId": 3,
+    "coautores": []
+  },
+  {
+    "id": 9,
+    "codigo": "TRB-2026-051",
+    "titulo": "Evaluación del uso de agua reciclada en riego de áreas verdes del campus",
+    "resumen": "Medición del ahorro hídrico obtenido al regar áreas verdes con agua tratada.",
+    "ejeId": 103,
+    "tipoId": 202,
+    "palabrasClave": [
+      "agua reciclada",
+      "riego",
+      "campus sostenible"
+    ],
+    "enlaceDocumento": "https://drive.google.com/file/d/ejemplo-051",
+    "estado": "aceptado",
+    "fechaEnvio": "2026-09-21T13:44",
+    "autorPrincipalId": 1,
+    "coautores": []
+  },
+  {
+    "id": 10,
+    "codigo": "TRB-2026-053",
+    "titulo": "Bienestar emocional y rendimiento académico en primeros ciclos",
+    "resumen": "Relación entre indicadores de bienestar reportados y el rendimiento en los dos primeros ciclos.",
+    "ejeId": 105,
+    "tipoId": 203,
+    "palabrasClave": [
+      "bienestar",
+      "rendimiento académico",
+      "primeros ciclos"
+    ],
+    "enlaceDocumento": "https://drive.google.com/file/d/ejemplo-053",
+    "estado": "en_revision",
+    "fechaEnvio": "2026-09-28T19:10",
+    "autorPrincipalId": 5,
+    "coautores": []
+  },
+  {
+    "id": 11,
+    "codigo": "TRB-2026-057",
+    "titulo": "Tablero de indicadores para la gestión de residuos sólidos en Surco",
+    "resumen": "Construcción de un tablero de indicadores para el seguimiento municipal de residuos sólidos.",
+    "ejeId": 103,
+    "tipoId": 204,
+    "palabrasClave": [
+      "residuos sólidos",
+      "indicadores",
+      "gestión municipal"
+    ],
+    "enlaceDocumento": "https://drive.google.com/file/d/ejemplo-057",
+    "estado": "rechazado",
+    "fechaEnvio": "2026-09-28T22:31",
+    "autorPrincipalId": 3,
+    "coautores": [
+      {
+        "usuarioId": 1,
+        "nombre": "Rosa María Quispe Ttito",
+        "correo": "rosa.quispe@aloe.ulima.edu.pe",
+        "institucion": "Universidad de Lima"
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "codigo": "TRB-2026-062",
+    "titulo": "Huella hídrica de los comedores universitarios",
+    "resumen": "Estimación de la huella hídrica asociada a la operación de los comedores del campus.",
+    "ejeId": 103,
+    "tipoId": 202,
+    "palabrasClave": [
+      "huella hídrica",
+      "comedores",
+      "sostenibilidad"
+    ],
+    "enlaceDocumento": "https://drive.google.com/file/d/ejemplo-062",
+    "estado": "enviado",
+    "fechaEnvio": "2026-09-30T23:12",
+    "autorPrincipalId": 1,
+    "coautores": []
+  },
+  {
+    "id": 13,
+    "codigo": "TRB-2026-058",
+    "titulo": "Clasificación automática de reclamos vecinales con procesamiento de texto",
+    "resumen": "Clasificador de reclamos vecinales por categoría usando procesamiento de lenguaje natural.",
+    "ejeId": 101,
+    "tipoId": 203,
+    "palabrasClave": [
+      "PLN",
+      "reclamos",
+      "clasificación"
+    ],
+    "enlaceDocumento": "",
+    "estado": "borrador",
+    "fechaEnvio": null,
+    "autorPrincipalId": 1,
+    "coautores": []
+  },
+  {
+    "id": 14,
+    "codigo": "TRB-2026-059",
+    "titulo": "Modelo de negocio para laboratorios universitarios compartidos",
+    "resumen": "Propuesta de modelo de negocio para el uso compartido de laboratorios entre universidades.",
+    "ejeId": 104,
+    "tipoId": 202,
+    "palabrasClave": [
+      "modelo de negocio",
+      "laboratorios",
+      "colaboración"
+    ],
+    "enlaceDocumento": "",
+    "estado": "borrador",
+    "fechaEnvio": null,
+    "autorPrincipalId": 5,
+    "coautores": []
+  }
+]
