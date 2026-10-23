@@ -1,16 +1,42 @@
-# React + Vite
+# Congreso Académico Estudiantil - Plataforma de Gestión
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aplicación web desarrollada para la asignatura de **Programación Web (2026-2)** de la Universidad de Lima. El sistema permite gestionar el envío, revisión y dictamen de trabajos para un congreso académico estudiantil, con diferentes roles (visitante, autor, revisor y comité).
 
-Currently, two official plugins are available:
+## 🛠 Tecnologías Utilizadas
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+*   **Frontend:** React (Vite) + React Router
+*   **Estilos:** CSS puro (Variables globales y archivos modulares)
+*   **Íconos:** Lucide React
+*   **Control de versiones:** Git y GitHub
 
-## React Compiler
+## 🚀 Instalación y Ejecución Local
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Sigue estos pasos para levantar el proyecto en tu máquina:
 
-## Expanding the ESLint configuration
+```bash
+1. git clone https://github.com/ionuser13/congreso-academico.git
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+2. cd congreso-academico
+
+3. npm install
+
+4. npm run dev
+   
+5. Abre tu navegador en la ruta que indica la terminal (por defecto http://localhost:5173/)
+
+```
+## 👥 Equipo de Trabajo
+[Alexis] - HU-1: Cuenta y acceso
+
+[Adriano] - HU-2: Configuración de la edición
+
+[John] - HU-3: Envío de trabajos
+
+[Mathias] - HU-4: Asignación de revisiones
+
+[Leonel] - HU-5: Revisión y dictamen
+
+[Mariana] - HU-6: Programa del congreso
+
+
+  
