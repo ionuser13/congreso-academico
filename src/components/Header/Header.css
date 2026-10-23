@@ -1,8 +1,14 @@
 @import '../../styles/variables.css';
+.headerContainer {
+    background-color: var(--color-primary);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
 .header {
     display:flex;
-    justify-content: space-around;
-    background-color: var(--color-primary);
+    justify-content: space-between;
+    width: 1200px;
 }
 #navIzq {
     display: flex;
@@ -27,15 +33,6 @@
 }
 #congreso, #logo {
     font-family: var(--font-serif);
-
-}
-#universidad, #estadoEdicion {
-    font-family: var(--font-sans);
-    font-size: var(--font-size-etiqueta);
-    line-height: var(--line-height-etiqueta);
-    text-transform: uppercase;
-    font-weight: var(--font-weight-thin);
-    letter-spacing: var(--letter-spacing-etiqueta);
 }
 
 #navDer {
@@ -43,6 +40,7 @@
     gap: 16px;
     color: var(--color-surface);
     align-items: center;
+    padding-right: 16px; 
 }
 #recepcion {
     background-color: var(--color-surface);

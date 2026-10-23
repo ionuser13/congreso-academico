@@ -1,0 +1,81 @@
+@import '../../styles/variables.css';
+
+/* Pie de página común: fondo oscuro, títulos de columna en dorado. */
+.footerContainer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background: #231C1D;
+}
+.pie {
+  margin-top: auto;
+  font-family: var(--font-sans);
+  text-align: left;
+  color: #D9D3CF;
+  width: 1200px;
+}
+.pie__contenido {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 24px;
+  margin: 0 auto;
+  padding: 40px 16px 32px;
+}
+.pie__marca h2 {
+  margin: 0 0 8px;
+  font-weight: 600;
+  letter-spacing: normal;
+  color: var(--color-surface);
+}
+.pie__marca p {
+  max-width: 360px;
+  margin: 0;
+  font-size: var(--font-size-auxiliary);
+  line-height: 20px;
+}
+.pie__columna { display: flex; flex-direction: column; align-items: flex-start; gap: 6px; }
+.pie__columna h3 {
+  margin: 0 0 4px;
+  font-weight: 500;
+  color: var(--color-accent);
+}
+.pie__columna a,
+.pie__columna button,
+.pie__columna span {
+  padding: 0;
+  font: inherit;
+  font-size: var(--font-size-auxiliary);
+  line-height: var(--line-height-auxiliary);
+  color: #D9D3CF;
+  text-align: left;
+  text-decoration: none;
+  background: none;
+  border: 0;
+  cursor: pointer;
+}
+.pie__columna span { cursor: default; }
+.pie__columna a:hover,
+.pie__columna button:hover,
+.pie__legales a:hover { color: var(--color-surface); text-decoration: underline; }
+.pie__inferior {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 8px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 16px;
+  font-size: var(--font-size-etiqueta);
+  color: #9A908C;
+  border-top: 1px solid #3A3132;
+}
+.pie__legales { display: flex; gap: 20px; }
+.pie__legales a { color: #9A908C; text-decoration: none; }
+
+@media (max-width: 800px) {
+  .pie__contenido { grid-template-columns: 1fr 1fr; }
+  .pie__marca { grid-column: 1 / -1; }
+}
+@media (max-width: 480px) {
+  .pie__contenido { grid-template-columns: 1fr; }
+}
