@@ -6,6 +6,7 @@ import { AuthProvider, RutaProtegida, rutasAuth, rutaNoEncontrada } from './feat
 import ConfiguracionEdicionPage from './features/configuracion/pages/ConfiguracionEdicionPage'
 import RevisionDictamen from './features/revision/pages/RevisionDictamen/RevisionDictamen'
 import ConsolidadoTrabajo from './features/revision/pages/ConsolidadoTrabajo/ConsolidadoTrabajo'
+import { rutasAsignacion } from './features/asignacion'
 import './App.css'
 
 function App() {
@@ -32,7 +33,10 @@ function App() {
             <Route path="/trabajos-recibidos/:id/consolidado" element={<ConsolidadoTrabajo />} />
           </Route>
 
-          {/* Rutas de las demás historias (HU-3 a HU-6) */}
+          {/* HU-4 — Asignación de revisiones (solo comité) */}
+          {rutasAsignacion}
+
+          {/* Rutas de las demás historias (HU-3 y HU-6) */}
 
           {/* 404: siempre al final */}
           {rutaNoEncontrada}
