@@ -5,6 +5,9 @@ import PiePagina from './components/PiePagina/PiePagina.jsx'
 import { AuthProvider, RutaProtegida, rutasAuth, rutaNoEncontrada } from './features/auth'
 import {rutasEnvioTrabajos} from './features/envioTrabajos'
 import ConfiguracionEdicionPage from './features/configuracion/pages/ConfiguracionEdicionPage'
+import RevisionDictamen from './features/revision/pages/RevisionDictamen/RevisionDictamen'
+import ConsolidadoTrabajo from './features/revision/pages/ConsolidadoTrabajo/ConsolidadoTrabajo'
+import { rutasAsignacion } from './features/asignacion'
 import './App.css'
 
 function App() {
@@ -22,8 +25,22 @@ function App() {
             <Route path="/configuracion" element={<ConfiguracionEdicionPage />} />
           </Route>
 
-          {/* Rutas de las demás historias (HU-3 a HU-6) */}
+          {/* HU-5 — Revisión y dictamen */}
+          <Route element={<RutaProtegida roles={['revisor', 'ambos']} />}>
+            <Route path="/bandeja" element={<RevisionDictamen />} />
+          </Route>
+
+          <Route element={<RutaProtegida roles={['comite']} />}>
+            <Route path="/trabajos-recibidos/:id/consolidado" element={<ConsolidadoTrabajo />} />
+          </Route>
+
+          {/* HU-4 — Asignación de revisiones (solo comité) */}
+          {rutasAsignacion}
+
+          {/* Rutas de las demás historias (HU-3 y HU-6) */}
+
           {rutasEnvioTrabajos}
+
           {/* 404: siempre al final */}
           {rutaNoEncontrada}
         </Routes>

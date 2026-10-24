@@ -1,13 +1,28 @@
-// src/features/configuracion/components/EdicionTab.jsx
+import { useState } from 'react';
 import { Tag, MapPin, FileText } from 'lucide-react';
-import './EdicionTab.css'; // Importamos los estilos
-
+import ModalCambiarEstado from './ModalCambiarEstado';
+import './EdicionTab.css';
 
 export default function EdicionTab({ datos, onActualizar }) {
+  // 1. Estado para abrir/cerrar el modal
+  const [modalEstadoAbierto, setModalEstadoAbierto] = useState(false); 
+
+  // 2. Función para actualizar campos de texto simples
   const handleChangeRaiz = (campo, valor) => {
     onActualizar({ ...datos, [campo]: valor });
   };
 
+  // 3. Función que se ejecuta cuando confirmas el cambio de estado en el modal
+  const handleConfirmarCambioEstado = () => {
+    onActualizar({ 
+      ...datos, 
+      estadoEtiqueta: 'En revisión', 
+      estado: 'en_revision' 
+    });
+    setModalEstadoAbierto(false);
+  };
+
+  // Cálculos para el panel lateral
   const totalCriterios = datos.criteriosEvaluacion.reduce(
     (sum, c) => sum + Number(c.pesoPorcentaje || 0),
     0
@@ -49,8 +64,8 @@ export default function EdicionTab({ datos, onActualizar }) {
             <input
               type="number"
               className="input-texto"
-              value={datos.anio || ''}
-              onChange={(e) => handleChangeRaiz('anio', Number(e.target.value))}
+              value={datos.año || datos.anio || ''} 
+              onChange={(e) => handleChangeRaiz(datos.año !== undefined ? 'año' : 'anio', Number(e.target.value))}
               min="2024"
               max="2100"
             />
@@ -97,7 +112,11 @@ export default function EdicionTab({ datos, onActualizar }) {
 
         {/* Botón inferior */}
         <div className="footer-formulario">
-          <button type="button" className="btn-secundario">
+          <button 
+            type="button" 
+            className="btn-secundario"
+            onClick={() => setModalEstadoAbierto(true)}
+          >
             Cambiar estado de la edición
           </button>
         </div>
@@ -163,6 +182,15 @@ export default function EdicionTab({ datos, onActualizar }) {
         </div>
 
       </aside>
+
+      {/* Renderizado del Modal */}
+      {modalEstadoAbierto && (
+        <ModalCambiarEstado 
+          onCerrar={() => setModalEstadoAbierto(false)}
+          onConfirmar={handleConfirmarCambioEstado}
+        />
+      )}
+
     </div>
   );
 }

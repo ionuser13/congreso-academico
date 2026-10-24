@@ -186,3 +186,6 @@
   color: var(--color-text);
   font-weight: 600;
 }
+
+.texto-primario { color: var(--color-primary); }
+.texto-resaltado { color: var(--color-text); font-weight: 600; }
