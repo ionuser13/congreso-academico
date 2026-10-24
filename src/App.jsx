@@ -3,6 +3,7 @@ import Header from './components/Header/Header.jsx'
 import Navegacion from './components/Navegacion/Navegacion.jsx'
 import PiePagina from './components/PiePagina/PiePagina.jsx'
 import { AuthProvider, RutaProtegida, rutasAuth, rutaNoEncontrada } from './features/auth'
+import {rutasEnvioTrabajos} from './features/envioTrabajos'
 import ConfiguracionEdicionPage from './features/configuracion/pages/ConfiguracionEdicionPage'
 import RevisionDictamen from './features/revision/pages/RevisionDictamen/RevisionDictamen'
 import ConsolidadoTrabajo from './features/revision/pages/ConsolidadoTrabajo/ConsolidadoTrabajo'
@@ -41,6 +42,8 @@ function App() {
    {rutasPrograma}
 
    {/* Rutas de las demás historias (HU-3) */}
+
+          {rutasEnvioTrabajos}
 
           {/* 404: siempre al final */}
           {rutaNoEncontrada}
