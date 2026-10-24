@@ -1,0 +1,9 @@
+{
+  "publicado": true,
+  "sesiones": [
+    { "id": 1, "nombre": "Inteligencia artificial aplicada", "ejeId": 101, "fecha": "2026-11-12", "horaInicio": "09:00", "horaFin": "10:30", "sala": "A-101", "moderador": "Dra. Ana Salazar Bermúdez", "correoModerador": "ana.salazar@ulima.edu.pe", "trabajoIds": [42, 47, 49] },
+    { "id": 2, "nombre": "Sostenibilidad y ciudad", "ejeId": 103, "fecha": "2026-11-12", "horaInicio": "11:00", "horaFin": "12:30", "sala": "B-201", "moderador": "Mg. Carmen Effio Vargas", "correoModerador": "carmen.effio@ulima.edu.pe", "trabajoIds": [51, 52, 53] },
+    { "id": 3, "nombre": "Innovación y emprendimiento", "ejeId": 104, "fecha": "2026-11-13", "horaInicio": "11:00", "horaFin": "12:30", "sala": "B-201", "moderador": "Ing. Jorge Palomino Ávila", "correoModerador": "jorge.palomino@ulima.edu.pe", "trabajoIds": [] },
+    { "id": 4, "nombre": "Salud y sociedad", "ejeId": 105, "fecha": "2026-11-13", "horaInicio": "11:00", "horaFin": "12:30", "sala": "B-201", "moderador": "Dra. Milagros Yupanqui Ríos", "correoModerador": "milagros.yupanqui@ulima.edu.pe", "trabajoIds": [] }
+  ]
+}

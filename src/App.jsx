@@ -7,6 +7,7 @@ import ConfiguracionEdicionPage from './features/configuracion/pages/Configuraci
 import RevisionDictamen from './features/revision/pages/RevisionDictamen/RevisionDictamen'
 import ConsolidadoTrabajo from './features/revision/pages/ConsolidadoTrabajo/ConsolidadoTrabajo'
 import { rutasAsignacion } from './features/asignacion'
+import { rutasPrograma } from './features/programa'
 import './App.css'
 
 function App() {
@@ -36,7 +37,10 @@ function App() {
           {/* HU-4 — Asignación de revisiones (solo comité) */}
           {rutasAsignacion}
 
-          {/* Rutas de las demás historias (HU-3 y HU-6) */}
+             {/* HU-6 — Programa del congreso */}
+   {rutasPrograma}
+
+   {/* Rutas de las demás historias (HU-3) */}
 
           {/* 404: siempre al final */}
           {rutaNoEncontrada}
