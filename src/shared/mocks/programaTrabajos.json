@@ -1,0 +1,11 @@
+[
+  { "id": 42, "codigo": "TRB-2026-042", "titulo": "Predicción de deserción universitaria mediante aprendizaje supervisado", "ejeId": 101, "tipo": "Artículo completo", "autores": "R. Quispe y 2 más", "autorPrincipalId": 3 },
+  { "id": 45, "codigo": "TRB-2026-045", "titulo": "Detección de fraude en pagos móviles con modelos de árboles", "ejeId": 106, "tipo": "Artículo completo", "autores": "C. Rivas", "autorPrincipalId": null },
+  { "id": 47, "codigo": "TRB-2026-047", "titulo": "Segmentación de estudiantes por hábitos de estudio", "ejeId": 101, "tipo": "Póster", "autores": "A. Cárdenas y 1 más", "autorPrincipalId": null },
+  { "id": 49, "codigo": "TRB-2026-049", "titulo": "Reconocimiento de patrones en consumo eléctrico del campus", "ejeId": 101, "tipo": "Artículo completo", "autores": "M. Talledo", "autorPrincipalId": 5 },
+  { "id": 51, "codigo": "TRB-2026-051", "titulo": "Evaluación del uso de agua reciclada en riego de áreas verdes del campus", "ejeId": 103, "tipo": "Resumen extendido", "autores": "R. Quispe, S. Bustamante", "autorPrincipalId": 1 },
+  { "id": 52, "codigo": "TRB-2026-052", "titulo": "Movilidad en bicicleta y seguridad vial en Miraflores", "ejeId": 103, "tipo": "Póster", "autores": "J. Alcántara", "autorPrincipalId": null },
+  { "id": 53, "codigo": "TRB-2026-053", "titulo": "Huella hídrica de los comedores universitarios", "ejeId": 103, "tipo": "Resumen extendido", "autores": "P. Huamán y 1 más", "autorPrincipalId": null },
+  { "id": 60, "codigo": "TRB-2026-060", "titulo": "Clasificación de reclamos vecinales con procesamiento de lenguaje", "ejeId": 101, "tipo": "Póster", "autores": "D. Lozano", "autorPrincipalId": null },
+  { "id": 62, "codigo": "TRB-2026-062", "titulo": "Modelo de rotación docente en institutos de Lima Norte", "ejeId": 105, "tipo": "Resumen extendido", "autores": "F. Núñez", "autorPrincipalId": null }
+]

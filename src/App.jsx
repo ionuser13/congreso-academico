@@ -3,10 +3,12 @@ import Header from './components/Header/Header.jsx'
 import Navegacion from './components/Navegacion/Navegacion.jsx'
 import PiePagina from './components/PiePagina/PiePagina.jsx'
 import { AuthProvider, RutaProtegida, rutasAuth, rutaNoEncontrada } from './features/auth'
+import {rutasEnvioTrabajos} from './features/envioTrabajos'
 import ConfiguracionEdicionPage from './features/configuracion/pages/ConfiguracionEdicionPage'
 import RevisionDictamen from './features/revision/pages/RevisionDictamen/RevisionDictamen'
 import ConsolidadoTrabajo from './features/revision/pages/ConsolidadoTrabajo/ConsolidadoTrabajo'
 import { rutasAsignacion } from './features/asignacion'
+import { rutasPrograma } from './features/programa'
 import './App.css'
 
 function App() {
@@ -36,7 +38,12 @@ function App() {
           {/* HU-4 — Asignación de revisiones (solo comité) */}
           {rutasAsignacion}
 
-          {/* Rutas de las demás historias (HU-3 y HU-6) */}
+             {/* HU-6 — Programa del congreso */}
+   {rutasPrograma}
+
+   {/* Rutas de las demás historias (HU-3) */}
+
+          {rutasEnvioTrabajos}
 
           {/* 404: siempre al final */}
           {rutaNoEncontrada}
